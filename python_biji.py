@@ -657,4 +657,150 @@ NameError: name 'scort' is not defined
 [78, 79, 85.2, 90, 99.3]
 >>> sorted(people,key=lambda n:n[1])
 ['jerry', 'peter', 'mike', 'join', 'tom']
+>>> 元组操作
+>>> l=[]
+>>> t=()
+>>> l
+[]
+>>> t
+()
+>>> t=(1,2,3)
+>>> t
+(1, 2, 3)
+>>> t1=(1,2,3,'tom',3.14,(99,100),[100,101])
+>>> t1
+(1, 2, 3, 'tom', 3.14, (99, 100), [100, 101])
+>>> name=('liulimig')
+>>> name
+'liulimig'
+>>> type(name)
+<class 'str'>
+>>> type(t)
+<class 'tuple'>
+>>> type(t1)
+<class 'tuple'>
+>>> name = ('liuliming',)
+>>> name
+('liuliming',)
+>>> type(name)
+<class 'tuple'>
+>>> t2 = 1,2,3
+>>> t2
+(1, 2, 3)
+>>> name = 'liuliming',
+>>> name
+('liuliming',)
+>>> t3=tuple(range(1,6))
+>>> t3
+(1, 2, 3, 4, 5)
+>>> t
+(1, 2, 3)
+>>> t[1]
+2
+>>> t1[3]
+'tom'
+>>> t1[5][0]
+99
+>>> t3
+(1, 2, 3, 4, 5)
+>>> t3[0:2]
+(1, 2)
+>>> t3[:3]
+(1, 2, 3)
+>>> t3[-1]
+5
+>>> t
+(1, 2, 3)
+>>> t1
+(1, 2, 3, 'tom', 3.14, (99, 100), [100, 101])
+>>> t+t1
+(1, 2, 3, 1, 2, 3, 'tom', 3.14, (99, 100), [100, 101])
+>>> t
+(1, 2, 3)
+>>> t1
+(1, 2, 3, 'tom', 3.14, (99, 100), [100, 101])
+>>> t=t+t1
+>>> t
+(1, 2, 3, 1, 2, 3, 'tom', 3.14, (99, 100), [100, 101])
+>>> t=(1,2,3)
+>>> t * 3
+(1, 2, 3, 1, 2, 3, 1, 2, 3)
+>>> t
+(1, 2, 3)
+>>> l
+[]
+>>> l.append(1)
+>>> l
+[1]
+>>> l.append(2)
+>>> l
+[1, 2]
+>>> t
+(1, 2, 3)
+>>> t.append(4)
+Traceback (most recent call last):
+  File "<pyshell#373>", line 1, in <module>
+    t.append(4)
+AttributeError: 'tuple' object has no attribute 'append'
+>>> l.extend([99,100])
+>>> l
+[1, 2, 99, 100]
+>>> t.extend((99,100))
+Traceback (most recent call last):
+  File "<pyshell#376>", line 1, in <module>
+    t.extend((99,100))
+AttributeError: 'tuple' object has no attribute 'extend'
+>>> l[0]=101
+>>> l
+[101, 2, 99, 100]
+>>> t
+(1, 2, 3)
+>>> t[0]=99
+Traceback (most recent call last):
+  File "<pyshell#380>", line 1, in <module>
+    t[0]=99
+TypeError: 'tuple' object does not support item assignment
+>>> t
+(1, 2, 3)
+>>> 3 in t
+True
+>>> 4 in t
+False
+>>> 4 not in t
+True
+>>> t = tuple(range(1,11))
+>>> len(t)
+10
+>>> min(1)
+Traceback (most recent call last):
+  File "<pyshell#387>", line 1, in <module>
+    min(1)
+TypeError: 'int' object is not iterable
+>>> min(t)
+1
+>>> max(t)
+10
+>>> sum(t)
+55
+>>> t.index(6)
+5
+>>> t.count(9)
+1
+>>> a=5
+>>> b=10
+>>> a,b=5,10
+>>> a
+5
+>>> b
+10
+>>> a,b=n,a
+Traceback (most recent call last):
+  File "<pyshell#398>", line 1, in <module>
+    a,b=n,a
+NameError: name 'n' is not defined
+>>> a,b=b,a
+>>> a
+10
+>>> b
+5
 >>> 
