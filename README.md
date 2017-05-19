@@ -1,17 +1,26 @@
 # python
 #python学习笔记
-1.基础常识 计算机基础常识
-2.Windows Python 安装与运行
+1.基础常识
+计算机基础常识
+2.
+Windows Python 安装与运行
+
 Linux Python 运行
+
 Mac OS Python运行
 3
+
 Python 及工具安装与配置
+
 IDLE 基本应用
+
 4
 Python 变量、数据类型及存储机制
 
 5
+
 数值类型
+
 整型浮点型声明及基本运算
 
 6
